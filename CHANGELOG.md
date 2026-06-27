@@ -9,6 +9,12 @@
 - Добавлены CI-скрипты `scripts/import_gpg_key.sh` и `scripts/build_pages.sh`.
 - Добавлен workflow `.github/workflows/publish.yml` для сборки OSTree-репозитория и публикации через Pages.
 - Добавлена русскоязычная инструкция в `README.md`.
+- Создан публичный GitHub-репозиторий `Cheviiot/Orbit`.
+- Добавлены GitHub Secrets `GPG_PRIVATE_KEY` и `GPG_KEY_ID` для подписанной публикации.
+- GitHub Pages включен в режиме `workflow`.
+
+### Изменено
+- Инструкция генерации GPG-ключа в `README.md` переведена на batch-формат, совместимый со старыми версиями GnuPG.
 
 ### Проверено
 - `python3 -m unittest discover -s tests -v` — 8 тестов прошли.
@@ -17,6 +23,4 @@
 - `scripts/build_pages.sh` с временным GPG-ключом — сгенерированы `public/orbit.flatpakrepo`, `public/repo/summary` и подписи summary.
 
 ### Осталось
-- Создать и запушить GitHub-репозиторий `Cheviiot/Orbit`.
-- Включить GitHub Pages source `workflow`.
-- Добавить GitHub Secrets `GPG_PRIVATE_KEY` и `GPG_KEY_ID`.
+- Дождаться первого успешного выполнения workflow `Publish Flatpak Repository`.

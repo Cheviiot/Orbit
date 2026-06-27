@@ -1,8 +1,8 @@
 # Task status
 
 Status: in_progress
-Remaining items: 3
-Current item: Создание GitHub-репозитория и публикация main
+Remaining items: 1
+Current item: Первый успешный GitHub Actions deploy
 
 Completed items:
 - Выбрано название репозитория: Orbit.
@@ -16,6 +16,10 @@ Completed items:
 - Проверена загрузка и SHA-256 валидация двух bundles из релиза `GeneralsX-Beta-11`.
 - Проверен импорт двух bundles во временный OSTree repo.
 - Проверена полная локальная генерация `public/` с временным GPG-ключом.
+- Создан публичный GitHub-репозиторий `Cheviiot/Orbit`.
+- `main` запушен в `https://github.com/Cheviiot/Orbit`.
+- Добавлены GitHub Secrets `GPG_PRIVATE_KEY` и `GPG_KEY_ID`.
+- GitHub Pages включен в режиме `workflow`.
 
 Blocked items:
 - Нет.
@@ -34,4 +38,4 @@ Last checks:
 Notes:
 - Репозиторий должен публиковать настоящий Flatpak remote через GitHub Pages, а не только `.flatpak` bundles в GitHub Releases.
 - Первые пакеты: `com.fbraz3.GeneralsX` и `com.fbraz3.GeneralsXZH`.
-- Для реальной публикации GitHub Actions нужны secrets `GPG_PRIVATE_KEY` и `GPG_KEY_ID`.
+- Следующая проверка должна подтвердить успешное выполнение workflow `Publish Flatpak Repository`.
