@@ -21,6 +21,9 @@
 - `python3 tools/orbit_tools.py sync-bundles --config packages/generalsx.json --output-dir dist/bundles --metadata dist/generalsx-release.json` — скачаны и проверены `GeneralsX-linux.flatpak` и `GeneralsXZH-linux.flatpak`.
 - `flatpak build-import-bundle` во временный OSTree repo — появились refs `app/com.fbraz3.GeneralsX/x86_64/master` и `app/com.fbraz3.GeneralsXZH/x86_64/master`.
 - `scripts/build_pages.sh` с временным GPG-ключом — сгенерированы `public/orbit.flatpakrepo`, `public/repo/summary` и подписи summary.
+- GitHub Actions run `28279112210` — job `build` не стартовал на runner.
+- Check-run annotation `83791357867` — GitHub заблокировал запуск из-за billing issue аккаунта.
 
 ### Осталось
-- Дождаться первого успешного выполнения workflow `Publish Flatpak Repository`.
+- Разблокировать GitHub Actions billing для аккаунта.
+- После разблокировки запустить workflow `Publish Flatpak Repository`.
