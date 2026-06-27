@@ -1,0 +1,18 @@
+{
+  "source": {
+    "repository": "fbraz3/GeneralsX",
+    "release": "latest"
+  },
+  "packages": [
+    {
+      "id": "com.fbraz3.GeneralsX",
+      "title": "GeneralsX",
+      "asset": "GeneralsX-linux.flatpak"
+    },
+    {
+      "id": "com.fbraz3.GeneralsXZH",
+      "title": "GeneralsX Zero Hour",
+      "asset": "GeneralsXZH-linux.flatpak"
+    }
+  ]
+}

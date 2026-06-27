@@ -1,0 +1,7 @@
+.flatpak-builder/
+__pycache__/
+*.py[cod]
+dist/
+repo/
+public/
+.pytest_cache/
